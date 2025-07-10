@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root{
+    font-family: "Merriweather", serif;
+    --spacing: 20px;
+    --primary-color: #FBF4EB;
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-image: url(./assets/Backgrounds/Background_header.jpg);
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    color: var(--primary-color);
+    object-fit: cover;
+}
+
+ul{
+   list-style: none; 
+}
+
+header > nav{
+    display: flex;
+    background-color:#1B1A1F ; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: var(--spacing);
+    height: fit-content;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.Logo_tienda{
+height: 80px;
+width: auto;
+
+}
+
+header > nav > ul{
+    display: flex;
+    gap: var(--spacing);
+    font-size: 20px;
+    
+}
+
+
