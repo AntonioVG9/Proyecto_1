@@ -26,6 +26,14 @@ html {
   width: auto;
   color: var(--primary-color);
   object-fit: cover;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  align-items: flex-start;
+  justify-content: center;
+  height: 95vh;
+  text-align: justify;
 }
 
 #navlinks a {
@@ -60,7 +68,7 @@ header > nav {
 }
 
 .Logo_tienda {
-  height: 80px;
+  height: 70px;
   width: auto;
 }
 
@@ -75,7 +83,23 @@ header > nav > ul {
   #navlinks {
     display: none;
   }
+  }
+
+  @media (max-width: 600px) {
+  p, h1, h2, h3, form {
+    width: 90vw; 
+    font-size: 18px; 
+  }
+  }
+
+img, video, iframe, section, main, header, footer {
+  max-width: 100%;
+  height: auto;
 }
+
+
+
+
 
 .abtn {
   background-color: var(--primary-color);
@@ -96,18 +120,6 @@ p {
   font-size: 24px;
   width: 50vw;
   z-index: 1;
-}
-
-.hero {
-  position: relative;
-  padding: var(--spacing);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing);
-  align-items: flex-start;
-  justify-content: center;
-  height: 95vh;
-  text-align: justify;
 }
 
 .hero::before {
@@ -161,42 +173,100 @@ p {
   padding: var(--spacing);
   margin: var(--spacing);
   gap: var(--spacing_secondary);
- 
 }
 
-.gallery > li > img{
-     border-radius: 10px;
-     border: 1px solid rgba(14, 13, 13, 0.236);
-     width: 100%;
-     max-height: 400px;
-     min-height: 300px;
-     aspect-ratio: 1 1 1 1;
-
+.gallery > li > img {
+  border-radius: 10px;
+  border: 1px solid rgba(14, 13, 13, 0.236);
+  width: 100%;
+  max-height: 400px;
+  min-height: 300px;
+  aspect-ratio: 1.1;
+  object-fit: cover;
 }
 
 h3 {
-    text-decoration:wavy;
-    color:#070707;  
+  text-decoration: wavy;
+  color: #070707;
 }
 
-.gallery > li > p{
-    font-size: 16px;
+.gallery > li > p {
+  font-size: 16px;
 }
-
-
 
 .gallery > li > a {
-  text-decoration:solid;
+  text-decoration: underline;
   color: inherit;
-  padding-top:var(--spacing);
+  padding-top: var(--spacing);
   margin-top: var(--spacing);
 }
 
+.Custom {
+  position: relative;
+  background-image: url(./assets/Backgrounds/Background_custom.webp);
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  color: var(--primary-color);
+  object-fit: cover;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
 
+.Custom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0000005f;
+  z-index: 0;
+}
 
+.Custom h2 {
+  font-size: 42px;
+  z-index: 1;
+}
+
+.Custom p {
+  font-size: 24px;
+  width: 50vw;
+  z-index: 1;
+}
+
+.custom_dice {
+  font-size: 16px;
+  color: antiquewhite;
+  width: 50vw;
+  z-index: 1;
+}
+
+input {
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: var(--spacing);
+}
+
+#custom_button {
+  border-radius: 10px;
+  margin-top: 40px;
+  background-color: var(--primary-color);
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #1b1a1f;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 1;
+}
 
 footer {
   border: 2px solid red;
+  padding: var(--spacing);
 }
-
-
