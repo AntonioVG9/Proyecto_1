@@ -16,6 +16,12 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+/* La intención es que las letras sean más pequeñas en móvil */
+@media (max-width: 900px) {
+  .hero {
+    font-size: 10px;
+  }
+}
 
 .hero {
   position: relative;
@@ -83,23 +89,27 @@ header > nav > ul {
   #navlinks {
     display: none;
   }
+}
+/* Antes de esto se me cortaba la app en móvil y habia que hacer scroll lateral */
+@media (max-width: 400px) {
+  p,
+  h1,
+  h2,
+  h3,
+  form {
+    width: 90vw;
+    font-size: 10px;
   }
+}
 
-  @media (max-width: 600px) {
-  p, h1, h2, h3, form {
-    width: 90vw; 
-    font-size: 18px; 
-  }
-  }
-
-img, video, iframe, section, main, header, footer {
+img,
+section,
+main,
+header,
+footer {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
 
 .abtn {
   background-color: var(--primary-color);
@@ -109,6 +119,7 @@ img, video, iframe, section, main, header, footer {
   text-decoration: none;
   font-size: 20px;
   z-index: 1;
+  justify-content: left;
 }
 
 h1 {
@@ -266,7 +277,40 @@ input {
   z-index: 1;
 }
 
-footer {
+
+.footer {
   border: 2px solid red;
+  display: flex;
+  background-color: #ffffff81;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--spacing);
+  height: fit-content;
+  color: black;
+  font-style: italic;
+  text-decoration: none;
+  list-style: none;
+}
+
+.Contact,
+.Legal,
+.Social,
+.Secciones {
+  list-style: none;
+}
+
+.Title_footer{
+  font-size: 26px;
+}
+
+.footer > .Social > img {
+  height: 50px;
+  width: 50px;
+}
+
+.Social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
