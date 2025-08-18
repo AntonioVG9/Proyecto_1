@@ -24,12 +24,12 @@ html {
   }
 }
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .hero .abtn {
     font-size: 16px;
   }
 }
-
+*/
 
 .hero {
   position: relative;
@@ -111,13 +111,13 @@ header > nav > ul {
   }
 }
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
   .gallery > li > p,
   .gallery > li > a {
-    font-size: 14px; /* o el tamaño que quieras */
+    font-size: 14px; 
   }
 }
-
+*/
 
 img,
 section,
