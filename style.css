@@ -20,7 +20,13 @@ html {
 /* La intención es que las letras sean más pequeñas en móvil */
 @media (max-width: 900px) {
   .hero {
-    font-size: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero .abtn {
+    font-size: 14px;
   }
 }
 
