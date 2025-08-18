@@ -16,6 +16,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
 /* La intención es que las letras sean más pequeñas en móvil */
 @media (max-width: 900px) {
   .hero {
@@ -90,6 +91,7 @@ header > nav > ul {
     display: none;
   }
 }
+
 /* Antes de esto se me cortaba la app en móvil y habia que hacer scroll lateral */
 @media (max-width: 400px) {
   p,
@@ -270,28 +272,23 @@ input {
   margin-top: 40px;
   background-color: var(--primary-color);
   padding: 10px 16px;
-  border-radius: 10px;
   color: #1b1a1f;
   text-decoration: none;
   font-size: 18px;
   z-index: 1;
 }
 
-
 .footer {
- 
   display: flex;
-  background-color: #ffffff81;
+  background-color: #2e2d32;
   justify-content: space-between;
   align-items: flex-start;
   padding: var(--spacing);
   height: fit-content;
   color: var(--primary-color);
-  background-color:  #2e2d32;
   font-style: italic;
   text-decoration: none;
   list-style: none;
-  
 }
 
 .Contact,
@@ -302,10 +299,10 @@ input {
   gap: var(--spacing);
 }
 
-.Title_footer{
+.Title_footer {
   font-size: 26px;
-   display: block;
-   margin-bottom: 15px;
+  display: block;
+  margin-bottom: 15px;
 }
 
 footer li:not(.Title_footer) {
@@ -317,7 +314,7 @@ footer li:not(.Title_footer) {
   width: 50px;
 }
 
-.Social{
+.Social {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -325,46 +322,56 @@ footer li:not(.Title_footer) {
   gap: var(--spacing);
 }
 
-.social_logos{
-display: flex;
+.social_logos {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: var(--spacing);
-
 }
 
-
-
-
-@media (max-width: 900px) {
-   footer li:not(.Title_footer) { 
-    display: none;
-  }
-}
-
-@media (max-width:900px) {
-  .Title_footer{
-    font-size: 12px;
-  }
-}
-
-
-
-footer a{
+footer a {
   text-decoration: none;
   color: inherit;
   margin-bottom: 5px;
 }
 
-.section_links{
+.section_links {
   text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-start;
 }
 
+
+
+/* Para pantallas pequeñas <900px */
+@media (max-width: 900px) {
+  footer li:not(.Title_footer) {
+    display: none;
+  }
+
+  .Title_footer {
+    font-size: 12px;
+  }
+}
+
+/* Para pantallas muy pequeñas <400px */
+@media (max-width: 400px) {
+  p,
+  h1,
+  h2,
+  h3,
+  form {
+    width: 90vw;
+    font-size: 10px;
+  }
+
+  .Title_footer {
+    font-size: 10px;
+  }
+}
 
 
 
