@@ -24,6 +24,7 @@ html {
   }
 }
 
+
 .hero {
   position: relative;
   background-image: url(./assets/Backgrounds/Background_header.jpg);
@@ -100,9 +101,17 @@ header > nav > ul {
   h3,
   form {
     width: 90vw;
-    font-size: 10px;
+    font-size: 14px;
   }
 }
+
+@media (max-width: 400px) {
+  .gallery > li > p,
+  .gallery > li > a {
+    font-size: 14px; /* o el tamaño que quieras */
+  }
+}
+
 
 img,
 section,
