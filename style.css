@@ -279,17 +279,19 @@ input {
 
 
 .footer {
-  border: 2px solid red;
+ 
   display: flex;
   background-color: #ffffff81;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: var(--spacing);
   height: fit-content;
-  color: black;
+  color: var(--primary-color);
+  background-color:  #2e2d32;
   font-style: italic;
   text-decoration: none;
   list-style: none;
+  
 }
 
 .Contact,
@@ -297,10 +299,17 @@ input {
 .Social,
 .Secciones {
   list-style: none;
+  gap: var(--spacing);
 }
 
 .Title_footer{
   font-size: 26px;
+   display: block;
+   margin-bottom: 15px;
+}
+
+footer li:not(.Title_footer) {
+  margin-bottom: 5px;
 }
 
 .footer > .Social > img {
@@ -310,7 +319,52 @@ input {
 
 .Social{
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.social_logos{
+display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: var(--spacing);
+
 }
+
+
+
+
+@media (max-width: 900px) {
+   footer li:not(.Title_footer) { 
+    display: none;
+  }
+}
+
+@media (max-width:900px) {
+  .Title_footer{
+    font-size: 12px;
+  }
+}
+
+
+
+footer a{
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 5px;
+}
+
+.section_links{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+
+
+
