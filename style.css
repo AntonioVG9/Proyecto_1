@@ -107,17 +107,25 @@ header > nav > ul {
   h3,
   form {
     width: 90vw;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
-/*@media (max-width: 400px) {
+@media (max-width: 400px){
+.abtn {
+  font-size: 14px;
+}
+
+
+}
+
+@media (max-width: 400px) {
   .gallery > li > p,
   .gallery > li > a {
     font-size: 14px; 
   }
 }
-*/
+
 
 img,
 section,
@@ -374,15 +382,6 @@ footer a {
 
 /* Para pantallas muy pequeñas <400px */
 @media (max-width: 400px) {
-  p,
-  h1,
-  h2,
-  h3,
-  form {
-    width: 90vw;
-    font-size: 10px;
-  }
-
   .Title_footer {
     font-size: 10px;
   }
